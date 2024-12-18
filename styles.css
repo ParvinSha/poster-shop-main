@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+header {
+    position: relative; /* To ensure the header is a reference for positioning */
+}
+
+.navicon {
+    position: absolute;
+    top: 40px; /* Distance from the top */
+    left: 40px; /* Distance from the left */
+    width: 40px; /* Adjust icon size */
+    height: auto;
+    cursor: pointer; /* Add pointer cursor for interactivity */
+}
+
+header img {
+    width: 100%;
+    height: 70vh;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 1.5rem;
+    padding: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 0;
+    background-color: #111;
+}
+
+/* Card styles */
+.card {
+    background-color: #111;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.card h2 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #d32f2f;
+}
+
+.last-cards-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  padding: 10rem;
+  padding-top: 5rem;
+  background-color: #111;
+}
+
+.last-cards-container .card {
+  flex: 1; /* Ensure each card takes equal space */
+  min-width: 48%; /* Each card takes 50% width minus some gap */
+  background-color: #fcf7f7;
+  color: #111;
+  border-radius: 8px;
+  padding: 0;
+}
+
+.last-cards-text-margin {
+  margin: 1rem;
+}
+
+.last-cards-text-margin > button {
+  padding: 1rem;
+}
+
+/* Table Section */
+.cart-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    border-collapse: collapse;
+    color: #fff;
+  }
+  
+  .cart-table th, .cart-table td {
+    border: 1px solid #444;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  .cart-table th {
+    background-color: #333;
+  }
+  
+  .total-row td {
+    font-size: 1.2rem;
+  }
+  
+  /* Checkout Button */
+  .checkout-button button {
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .checkout-button button:hover {
+    background-color: #c2185b;
+  }
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    padding: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    color: #aaa;
+}
+
+.footer-container div {
+    flex: 1;
+    text-align: center;
+}
+
+/* Nav Section Styling */
+.footer-section ul {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the text color from parent (white) */
+    font-size: 1rem;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #aaa; /* Optional: Light gray on hover */
+  }
